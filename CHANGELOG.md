@@ -1,4 +1,27 @@
-# Chrome Changelog
+# Changelog
+
+## 1.1.1
+
+-  Fix #7 Chef::Exceptions::InvalidRemoteFileURI on Windows platform 
+
+## 1.1.0
+
+- Fix FC052: Metadata uses the unimplemented "suggests" keyword
+- Update metadata description, source_url and issues_url
+
+## 1.0.12
+
+- Remove 'Google Chrome' string from chrome_version for mac installations
+- Add separate kitchen yaml for mac
+- Replace contributors file with link to github
+
+## 1.0.11
+
+- Remove Chef 12 source_url and issues_url from metadata
+
+## 1.0.10
+
+- Use correct apt repository name
 
 ## 1.0.9
 

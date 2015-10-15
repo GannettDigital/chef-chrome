@@ -2,11 +2,9 @@
 
 [![Cookbook Version](http://img.shields.io/cookbook/v/chrome.svg?style=flat-square)][cookbook]
 [![Build Status](http://img.shields.io/travis/dhoer/chef-chrome.svg?style=flat-square)][travis]
-[![GitHub Issues](http://img.shields.io/github/issues/dhoer/chef-chrome.svg?style=flat-square)][github]
 
 [cookbook]: https://supermarket.chef.io/cookbooks/chrome
 [travis]: https://travis-ci.org/dhoer/chef-chrome
-[github]: https://github.com/dhoer/chef-chrome/issues
 
 This cookbook installs Google Chrome browser (https://www.google.com/chrome/) at compile time, provides 
 `chrome_version` library method  to retrieve Chrome version installed, and provides `master_preferences` resource
@@ -14,7 +12,7 @@ to set user preferences.
 
 ## Requirements
 
-Chef 11.14.2 or higher.
+Chef 11.16+
 
 ### Platforms
 
@@ -24,8 +22,6 @@ Chef 11.14.2 or higher.
 - Windows
 
 ### Cookbooks
-
-These cookbooks are referenced with suggests, so be sure to depend on the cookbooks that apply.
 
 - apt
 - dmg
@@ -108,7 +104,7 @@ In the template, when you write your own, the `@` is significant.
 
 ## ChefSpec Matchers
 
-The Chrome cookbook includes custom [ChefSpec](https://github.com/sethvargo/chefspec) matchers you can use to test your 
+This cookbook includes custom [ChefSpec](https://github.com/sethvargo/chefspec) matchers you can use to test your 
 own cookbooks.
 
 Example Matcher Usage
@@ -121,7 +117,7 @@ expect(chef_run).to master_preferences_chrome('name').with(
 )
 ```
       
-Chrome Cookbook Matchers
+Cookbook Matchers
 
 - master_preferences_chrome(name)
 
